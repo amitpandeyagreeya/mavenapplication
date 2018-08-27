@@ -45,8 +45,8 @@ if(fname !=null) {
 	<table class="table table-striped"  style="margin-top:50px;">
 		<tr>
 			 <thead class="thead-dark">
-			<th class="thead-light"> Firstname</th>
-			<th class="thead-light"> Lastname</th>
+			<th class="thead-light"> NAME </th>
+			<th class="thead-light"> SIRNAME</th>
 			 <thead class="thead-dark">
 		</tr>
 		<% for(int i=0; i<firstName.size(); i++) {
