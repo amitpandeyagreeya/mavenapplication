@@ -26,16 +26,23 @@ if(fname !=null) {
 }
 
 %>
-	<form action="index.jsp" id="form1" method = "post">
-		<div id="form" class="container">
-		  First name:<br>
-		  <input type="text" name="firstname" id = "fname"><br>
-		  Last name:<br>
-		  <input type="text" name="lastname" id = "lname">
-		  <button type="submit">Submit</button>
+<div class="container">
+	<h2  style="margin-bottom:50px;"> Simple Web Application</h2>
+	<form action="index.jsp" id="form1" class="form-inline" method = "post">
+		<div id="form" class="form-group">
+		    <label for="firstName">First name:</label>
+			<input type="text" name="firstname"  class="form-control" placeholder="First Name" id = "fname">
 		</div>
+		<div class="form-group"  style="margin-left:50px;">
+			<label for="lastName">Last name:</label>
+			<input type="text" name="lastname" class="form-control" id = "lname" placeholder="Last Name">
+		</div>
+		<div class="form-group">
+		</div>
+		  <button class="btn btn-default" type="submit"  style="margin-left:80px;">Submit</button>
 	</form>
-	<table border = "1" class="table">
+
+	<table border = "1" class="table"  style="margin-top:50px;">
 		<tr>
 			<th> Firstname</th>
 			<th> Lastname</th>
@@ -47,5 +54,6 @@ if(fname !=null) {
 			</tr>
 		<%}%>
 	</table>	
+	</div>
 </body>
 </html>
