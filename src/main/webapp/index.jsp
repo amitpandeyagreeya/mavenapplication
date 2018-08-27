@@ -1,6 +1,9 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <html>
+	<head>
+	 <link rel="stylesheet" css/bootstrap.min.css">
+	</head>
 <body>
 <%
 String fname = request.getParameter("firstname");
