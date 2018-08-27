@@ -35,7 +35,7 @@ if(fname !=null) {
 		  <button type="submit">Submit</button>
 		</div>
 	</form>
-	<table border = "1">
+	<table border = "1" class="table">
 		<tr>
 			<th> Firstname</th>
 			<th> Lastname</th>
