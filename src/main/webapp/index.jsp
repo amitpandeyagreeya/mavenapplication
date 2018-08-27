@@ -27,7 +27,7 @@ if(fname !=null) {
 
 %>
 	<form action="index.jsp" id="form1" method = "post">
-		<div id="form">
+		<div id="form" class="container">
 		  First name:<br>
 		  <input type="text" name="firstname" id = "fname"><br>
 		  Last name:<br>
