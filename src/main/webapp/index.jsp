@@ -4,7 +4,7 @@
 	<head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
 	</head>
-<body>
+<body class="bg-dark text-white">
 <%
 String fname = request.getParameter("firstname");
 String lname = request.getParameter("lastname");
@@ -39,13 +39,15 @@ if(fname !=null) {
 		</div>
 		<div class="form-group">
 		</div>
-		  <button class="btn btn-default" type="submit"  style="margin-left:80px;">Submit</button>
+		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left:80px;">Submit</button>
 	</form>
 
-	<table border = "1" class="table"  style="margin-top:50px;">
+	<table class="table table-striped"  style="margin-top:50px;">
 		<tr>
-			<th> Firstname</th>
-			<th> Lastname</th>
+			 <thead class="thead-dark">
+			<th class="thead-light"> Firstname</th>
+			<th class="thead-light"> Lastname</th>
+			 <thead class="thead-dark">
 		</tr>
 		<% for(int i=0; i<firstName.size(); i++) {
 			
