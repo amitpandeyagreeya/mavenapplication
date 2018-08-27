@@ -2,7 +2,7 @@
 <%@ page import="java.util.ArrayList" %>
 <html>
 	<head>
-	 <link rel="stylesheet"bootstrap.min.css">
+	 <link rel="stylesheet" href = "bootstrap.min.css">
 	</head>
 <body>
 <%
