@@ -1,9 +1,4 @@
 # Maven
-- task: AzureAppServiceManage@0
-  inputs:
-    azureSubscription: 'Free Trial(23c6c33b-0ea8-43d9-844f-670611a085dc)'
-    Action: 'Start Azure App Service'
-    WebAppName: 'myservice'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
