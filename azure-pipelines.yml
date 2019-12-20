@@ -22,3 +22,10 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Free Trial(3)(23c6c33b-0ea8-43d9-844f-670611a085dc)'
+    appType: 'webAppLinux'
+    appName: 'simpleapp-service'
+    package: '$(System.DefaultWorkingDirectory)/**/*.war'
+    runtimeStack: 'TOMCAT|8.5-jre8'
