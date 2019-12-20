@@ -32,4 +32,4 @@ steps:
     deployToSlotOrASE: true
     ResourceGroupName: 'simpleapp-rg'
     SlotName: 'simpleapp'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
+    packageForLinux: '/home/vsts/work/1/s/target/simpleWebApplication.1-0.0.1-SNAPSHOT.war'
