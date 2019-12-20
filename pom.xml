@@ -30,6 +30,33 @@
 	    <webXml>src\main\WEB-INF\web.xml</webXml>        
 	  </configuration>
 	</plugin>
+	  <plugin>
+        <groupId>com.microsoft.azure</groupId>
+        <artifactId>azure-webapp-maven-plugin</artifactId>
+        <version>1.8.0</version>
+        <configuration>
+          <schemaVersion>V2</schemaVersion>
+          <resourceGroup>simpleapplication11-rg</resourceGroup>
+          <appName>my-app-name1</appName>
+          <pricingTier>P1v2</pricingTier>
+          <region>South Central US</region>
+          <runtime>
+            <os>linux</os>
+            <javaVersion>jre8</javaVersion>
+            <webContainer>TOMCAT 8.5</webContainer>
+          </runtime>
+          <deployment>
+            <resources>
+              <resource>
+                <directory>${project.basedir}/target</directory>
+                <includes>
+                  <include>*.war</include>
+                </includes>
+              </resource>
+            </resources>
+          </deployment>
+        </configuration>
+      </plugin>
 </plugins>
 </build>
 </project>
