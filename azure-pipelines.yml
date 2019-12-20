@@ -21,12 +21,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Free Trial(23c6c33b-0ea8-43d9-844f-670611a085dc)'
-    appType: 'webAppLinux'
-    WebAppName: 'SimpleApplication11'
-    packageForLinux: '/home/vsts/work/1/s/target/simpleWebApplication.1-0.0.1-SNAPSHOT.war'
-    RuntimeStack: 'NODE|10.1'
   
