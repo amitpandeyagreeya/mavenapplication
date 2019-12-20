@@ -27,7 +27,7 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Free Trial(1)(23c6c33b-0ea8-43d9-844f-670611a085dc)'
     appType: 'webAppLinux'
-    WebAppName: 'my-app-name1'
+    WebAppName: 'simpleWebApplication'
     deployToSlotOrASE: true
     ResourceGroupName: 'simpleapplication11-rg'
     SlotName: 'production'
