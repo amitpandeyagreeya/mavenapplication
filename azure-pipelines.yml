@@ -11,3 +11,11 @@
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial(23c6c33b-0ea8-43d9-844f-670611a085dc)'
+    appType: 'webAppLinux'
+    WebAppName: 'simpleapp-service'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
+    RuntimeStack: 'JAVA|8-jre8'
