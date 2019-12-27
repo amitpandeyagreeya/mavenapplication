@@ -1,4 +1,10 @@
 # Maven package Java project Web App to Linux on Azure
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
 # Build your Java project and deploy it to Azure as a Linux web app
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
