@@ -1,6 +1,3 @@
-# Maven package Java project Web App to Linux on Azure
 - task: CmdLine@2
   inputs:
-    script: |
-      echo Write your commands here
-      echo Hello world
+    script: 'echo "here"'
