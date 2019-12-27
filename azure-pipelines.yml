@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: beatblip.exe
+- script: dir
   displayName: 'Run a one-line script'
 
 - script: |
