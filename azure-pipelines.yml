@@ -1,2 +1,2 @@
 - task: CmdLine@2
-    script: 'echo "here"';
+    script:
