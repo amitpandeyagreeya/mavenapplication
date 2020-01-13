@@ -11,3 +11,5 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
+
+- task: PublishBuildArtifacts@1    
