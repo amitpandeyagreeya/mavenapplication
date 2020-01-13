@@ -12,4 +12,12 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 
-- task: PublishBuildArtifacts@1    
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.war'
+    targetFolder: '$(build.artifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    artifactName: 'war'
+    pathToPublish: '$(build.artifactStagingDirectory)'
