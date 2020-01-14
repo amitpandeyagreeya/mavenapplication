@@ -27,7 +27,7 @@ steps:
         azureSubscription: 'Azure subscription 1 (397c23ce-ca49-488e-93a4-28fcec20c74e)'
         appType: 'webApp'
         WebAppName: 'SimpleWebAppBBDemo'
-        packageForLinux: '/home/vsts/work/1/a/target/simpleWebApplication.1-0.0.1-SNAPSHOT.war'
+        packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
 
 - script: curl -o beatblipconsole.zip http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/BeatBlipConsole.zip
   displayName: 'Download Zip file'
