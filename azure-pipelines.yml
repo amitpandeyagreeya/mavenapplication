@@ -48,7 +48,7 @@ steps:
   displayName: 'Download chrome exe'
 
 - script:
-    dir C:\Users\VssAdministrator\beatblip\
+    dir C:/Users/VssAdministrator/beatblip/
 
 - script:
     dir $(System.DefaultWorkingDirectory)
