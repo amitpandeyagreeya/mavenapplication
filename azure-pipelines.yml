@@ -50,6 +50,8 @@ steps:
 #Step5
 - script: C:\Users\VssAdministrator\beatblip\beatblip.exe -open "$(Agent.BuildDirectory)\s\test.txt"
    displayName:'Run Beatblip'
+
+- script: more   C:\Users\VssAdministrator\BeatBlip-Log\beatblip-gui.log
  
 - script: curl -o test.bat http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/test.bat 
   displayName: 'Download Batch Script'
