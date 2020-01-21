@@ -49,7 +49,7 @@ steps:
   displayName: 'Download chrome exe'
 
 #Step5
-- script: C:\Users\VssAdministrator\beatblip\beatblip.exe -open "$(Agent.BuildDirectory)\s\test-amit.txt"
+- script: C:\Users\VssAdministrator\beatblip\beatblip.exe -open "$(Agent.BuildDirectory)\s\test.txt"
    displayName:'Run Beatblip'
 
 - script: more   C:\Users\VssAdministrator\BeatBlip-Log\beatblip-gui.log
