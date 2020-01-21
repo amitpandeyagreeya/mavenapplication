@@ -40,7 +40,7 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: curl -o test.txt http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/test.txt 
+- script: curl -o test.txt http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/test-amit.txt 
   displayName: 'Download text file'
 
 #Step4
@@ -48,7 +48,7 @@ steps:
   displayName: 'Download chrome exe'
 
 #Step5
-- script: C:\Users\VssAdministrator\beatblip\beatblip.exe -open "$(Agent.BuildDirectory)\s\test.txt"
+- script: C:\Users\VssAdministrator\beatblip\beatblip.exe -open "$(Agent.BuildDirectory)\s\test-amit.txt"
    displayName:'Run Beatblip'
 
 - script: more   C:\Users\VssAdministrator\BeatBlip-Log\beatblip-gui.log
