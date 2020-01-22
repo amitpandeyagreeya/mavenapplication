@@ -27,7 +27,7 @@ if(fname !=null) {
 
 %>
 <div class="container">
-	<h2  style="margin-bottom:50px;"> Simple Web Application Version 1 </h2>
+	<h2  style="margin-bottom:50px;"> Simple Web Application Version 2 </h2>
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group">
 		    <label for="firstName">First name:</label>
