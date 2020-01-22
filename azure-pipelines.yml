@@ -40,7 +40,7 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: curl -o test.txt http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/test-amit.txt 
+- script: curl -o test.txt http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/test_amit_pandey.txt 
   displayName: 'Download text file'
 
 #Step4
