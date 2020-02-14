@@ -24,7 +24,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Azure subscription 1 (df93d002-4153-4cdd-af29-2f965f4f9b82)'
+        azureSubscription: 'BeatBlipServiceConnection'
         appType: 'webApp'
         WebAppName: 'SimpleWebAppBB3Demo'
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
