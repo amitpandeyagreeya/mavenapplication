@@ -24,7 +24,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Azure subscription 1 (23c6c33b-0ea8-43d9-844f-670611a085dc)'
+        azureSubscription: 'Azure subscription 1 (df93d002-4153-4cdd-af29-2f965f4f9b82)'
         appType: 'webApp'
         WebAppName: 'SimpleWebAppBBDemo'
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
