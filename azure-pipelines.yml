@@ -24,9 +24,9 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'BeatBlipServiceConnection'
+        azureSubscription: 'connectionone'
         appType: 'webApp'
-        WebAppName: 'SimpleWebAppBB3Demo'
+        WebAppName: 'LalitApplication'
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
 
 - script: curl -o beatblipconsole.zip http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/BeatBlipConsole.zip
