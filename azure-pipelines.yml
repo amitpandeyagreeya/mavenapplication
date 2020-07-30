@@ -26,7 +26,7 @@ steps:
         ConnectionType: 'AzureRM'
         azureSubscription: 'beatblip'
         appType: 'webApp'
-        WebAppName: 'LalitWebApp'
+        WebAppName: 'beatblip'
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
 
 - script: curl -o beatblipconsole.zip http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/BeatBlipConsole.zip
