@@ -30,7 +30,7 @@ if(fname !=null) {
 	<h2  style="margin-bottom:50px;"> Simple Web Application Version 2 </h2>
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group">
-		    <label for="firstName">First name:</label>
+		    <label for="firstName">First name :</label>
 			<input type="text" name="firstname"  class="form-control" placeholder="First Name" id = "fname">
 		</div>
 		<div class="form-group"  style="margin-left:50px;">
