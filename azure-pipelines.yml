@@ -40,18 +40,18 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: curl -o test.txt http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/azuredevops.txt 
+- script: curl -o test.txt http://65.74.138.68:80/BeatBlipSubscriptionUI/azuredevops.txt 
   displayName: 'Download text file'
 
 #Step4
-- script: curl -o chromedriver.exe http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/chromedriver.exe 
+- script: curl -o chromedriver.exe http://65.74.138.68:80/BeatBlipSubscriptionUI/chromedriver.exe 
   displayName: 'Download chrome exe'
 
 #Step5
 - script: C:\Users\VssAdministrator\beatblip\beatblip.exe -open "$(Agent.BuildDirectory)\s\test.txt"
    displayName:'Run Beatblip'
 
-- script: curl -o test.bat http://beatblipdemo.agreeya.net/BeatBlipSubscriptionUI/test.bat 
+- script: curl -o test.bat http://65.74.138.68:80/BeatBlipSubscriptionUI/test.bat 
   displayName: 'Download Batch Script'
 
 - task: BatchScript@1
