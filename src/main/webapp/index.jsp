@@ -15,10 +15,11 @@ List<String> lastName ;
 firstName = new ArrayList();
 firstName.add("Sumit");
 firstName.add("Amit");
+firstName.add("Lalit");
 lastName = new ArrayList();
 lastName.add("Nagpal");
 lastName.add("Pandey");
-	
+lastName.add("Yadav");	
 
 if(fname !=null) {
 	firstName.add(fname);
