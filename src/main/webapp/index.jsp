@@ -43,7 +43,7 @@ if(fname !=null) {
 		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left:80px;">Submit</button>
 	</form>
 
-	<table class="table table-striped"  style="margin-top:50px;">
+<table class="table table-striped"  style="margin-top:50px;">
 		<tr>
 			 <thead class="thead-dark">
 			<th class="thead-light"> Firstname </th>
