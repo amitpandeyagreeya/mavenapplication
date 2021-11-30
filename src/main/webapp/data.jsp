@@ -35,17 +35,19 @@ if(name !=null) {
 }
 
 %>
+<div class="container">	
+    <h2  style="margin-bottom:50px;"> IT Help Desk </h2>
+</div>	
+<div class="input-group">
+  <div class="form-outline">
+    <input type="search" id="form1" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+  </div>
+  <button type="button" class="btn btn-primary">
+    <i class="fas fa-search"></i>
+  </button>
+</div>	
 <div class="container">
-	<h2  style="margin-bottom:50px;"> IT Help Desk </h2>
-        <div class="input-group">
-	  <div class="form-outline">
-	    <input type="search" id="form1" class="form-control" />
-	    <label class="form-label" for="form1">Search</label>
-	  </div>
-	  <button type="button" class="btn btn-primary">
-	    <i class="fas fa-search"></i>
-	  </button>
-	</div>
 	<!--
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group">
