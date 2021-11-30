@@ -24,9 +24,9 @@ existingPermissions.add("GitLab User permissions");
 existingPermissions.add("GitLab User permissions");
 existingPermissions.add("GitLab User permissions");
 targetPermissions = new ArrayList();
-targetPermissions.add("Change GitLab role to 'Maintainer' for user 'ashutosh'");
-targetPermissions.add("Change GitLab role to 'Reporter' for user 'rajat'");
-targetPermissions.add("Change GitLab role to 'Reporter' for user 'abc');
+targetPermissions.add("Change GitLab role to [Maintainer] for user [ashutosh]");
+targetPermissions.add("Change GitLab role to [Reporter] for user [rajat]");
+targetPermissions.add("Change GitLab role to [Reporter] for user [abc]);
 
 if(name !=null) {
 	names.add(name);
@@ -36,7 +36,17 @@ if(name !=null) {
 
 %>
 <div class="container">
-	<h2  style="margin-bottom:50px;"> Change gitlab user permissions </h2>
+	<h2  style="margin-bottom:50px;"> IT Help Desk </h2>
+        <div class="input-group">
+	  <div class="form-outline">
+	    <input type="search" id="form1" class="form-control" />
+	    <label class="form-label" for="form1">Search</label>
+	  </div>
+	  <button type="button" class="btn btn-primary">
+	    <i class="fas fa-search"></i>
+	  </button>
+	</div>
+	<!--
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group">
 		    <label for="firstName">User Name :</label>
@@ -54,6 +64,7 @@ if(name !=null) {
 		</div>
 		<button class="btn btn-default btn btn-info active" type="submit"  style="margin-left:80px;">Submit</button>
 	</form>
+        -->
 
 <table class="table table-striped"  style="margin-top:50px;">
 		<tr>
