@@ -3,7 +3,8 @@
 <html>
 	<head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
-	 <link rel="stylesheet" href = "data.css">	
+	 <link rel="stylesheet" href = "data.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">	
 	</head>
 <body class="bg-dark text-white">
 <%
@@ -38,7 +39,7 @@ if(name !=null) {
 %>
 <div class="container">	
     <h2  style="margin-bottom:50px;"> IT Help Desk </h2>
-</div>	
+	
 <form action="data.jsp" method="GET"> 
   <div class="row">
     <div class="col-xs-6 col-md-4">
@@ -46,13 +47,14 @@ if(name !=null) {
         <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
         <div class="input-group-btn">
           <button class="btn btn-primary" type="submit">
-            <span class="glyphicon glyphicon-search"></span>
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>
           </button>
         </div>
       </div>
     </div>
   </div>
 </form>	
+</div>	
 <div class="container">
 	<!--
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
