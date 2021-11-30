@@ -31,7 +31,7 @@ targetPermissions.add("Maintainer");
 if(name !=null) {
 	names.add(name);
 	existingPermissions.add(existingPermission);
-	targetPermissions.add(targetPermissions);
+	targetPermissions.add(targetPermission);
 }
 
 %>
