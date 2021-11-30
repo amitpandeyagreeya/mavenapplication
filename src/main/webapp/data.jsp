@@ -3,6 +3,7 @@
 <html>
 	<head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
+	 <link rel="stylesheet" href = "data.css">	
 	</head>
 <body class="bg-dark text-white">
 <%
@@ -38,15 +39,20 @@ if(name !=null) {
 <div class="container">	
     <h2  style="margin-bottom:50px;"> IT Help Desk </h2>
 </div>	
-<div class="input-group">
-  <div class="form-outline">
-    <input type="search" id="form1" class="form-control" />
-    <label class="form-label" for="form1">Search</label>
+<form action="data.jsp" method="GET"> 
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+        <div class="input-group-btn">
+          <button class="btn btn-primary" type="submit">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-  <button type="button" class="btn btn-primary">
-    <i class="fas fa-search"></i>
-  </button>
-</div>	
+</form>	
 <div class="container">
 	<!--
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
@@ -83,7 +89,11 @@ if(name !=null) {
 				 <td><%=names.get(i) %></td>
 				 <td><%=existingPermissions.get(i) %></td>
 				 <td><%=targetPermissions.get(i) %></td>
-				 <td><input id="<%=names.get(i)%>" type="checkbox" checked data-toggle="toggle" data-style="slow"></td>
+				 <td><label class="switch">
+				   <input id="<%=names.get(i)%>" type="checkbox" checked>
+				   <span class="slider round"></span>
+				   </label>
+				 </td>
 			</tr>
 		<%}%>
 	</table>	
