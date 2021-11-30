@@ -29,6 +29,8 @@ targetPermissions = new ArrayList();
 targetPermissions.add("Change GitLab role from 'Developer' to [Maintainer] for user [ashutosh]");
 targetPermissions.add("Change GitLab role from 'Maintainer' to [Reporter] for user [rajat]");
 targetPermissions.add("Change GitLab role from 'Maintainer' to [Reporter] for user [abc]");
+targetPermissions.add("Change GitLab role from 'Maintainer' to [Reporter] for user [nidhi]");
+
 
 if(name !=null) {
 	names.add(name);
