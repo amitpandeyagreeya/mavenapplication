@@ -92,7 +92,7 @@ if(name !=null) {
 				 <td><%=existingPermissions.get(i) %></td>
 				 <td><%=targetPermissions.get(i) %></td>
 				 <td><label class="switch">
-				   <input id="<%=names.get(i)%>" type="checkbox" checked>
+				   <input id="<%=names.get(i)%>" type="checkbox">
 				   <span class="slider round"></span>
 				   </label>
 				 </td>
