@@ -9,7 +9,7 @@ String fname = request.getParameter("filename");
 String pnum = request.getParameter("pagenum");
 String dt = request.getParameter("dateprocessed");
 
-if(session.getAttribute("fnames") == null)
+if(session.getAttribute("fnames") == null){
    List<String> fnames = new ArrayList();
    List<String> pnums = new ArrayList();
    List<String> dts = new ArrayList();
