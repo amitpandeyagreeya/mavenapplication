@@ -1,5 +1,4 @@
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
+<%@ page import = " java.util.* " %>
 <html>
 	<head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
@@ -10,10 +9,13 @@ String fname = request.getParameter("filename");
 String pnum = request.getParameter("pagenum");
 String dt = request.getParameter("dateprocessed");
 
-if(fnames == null){
+if(session.getAttribute("fnames") == null)
    List<String> fnames = new ArrayList();
    List<String> pnums = new ArrayList();
    List<String> dts = new ArrayList();
+   session.setAttribute("fnames",fnames); 
+   session.setAttribute("pnums",pnums); 
+   session.setAttribute("dts",dts); 
 }
 
 
