@@ -10,20 +10,18 @@ String fname = request.getParameter("filename");
 String pnum = request.getParameter("pagenum");
 String dt = request.getParameter("dateprocessed");
 
+if(fnames == null){
+   List<String> fnames = new ArrayList();
+   List<String> pnums = new ArrayList();
+   List<String> dts = new ArrayList();
+}
+
 
 if(fname !=null) {
 	fnames.add(fname);
 	pnums.add(pnum);
 	dts.add(dt);
 }
-
-if(fnames != null){
-   return;
-}
-
-List<String> fnames = new ArrayList();
-List<String> pnums = new ArrayList();
-List<String> dts = new ArrayList();
 
 
 
