@@ -15,6 +15,16 @@ List<String> fnames = new ArrayList();
 List<String> pnums = new ArrayList();
 List<String> dts = new ArrayList();
 
+if(fname && fname != null){
+   fnames.add(fname);
+}
+if(pnum && pnum != null){
+   pnums.add(pnum);
+}
+if(dt && dt != null){
+   dts.add(dt);
+}
+
 %>
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data </h2>
