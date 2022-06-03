@@ -58,7 +58,7 @@ List<String> dts = new ArrayList();
 
 <p id="demo"></p>
   
-<script>
+<%
 function myFunction(){
   var x = document.getElementById("myFile");
   var txt = "";
@@ -88,7 +88,7 @@ function myFunction(){
   }
   document.getElementById("demo").innerHTML = txt;
 }
-</script>	
+%>	
 	
 	</div>
 </body>
