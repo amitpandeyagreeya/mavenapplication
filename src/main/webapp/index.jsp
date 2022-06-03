@@ -6,20 +6,23 @@
 	</head>
 <body class="bg-dark text-white">
 <%
-String fname = request.getParameter("firstname");
-String lname = request.getParameter("lastname");
+String fname = request.getParameter("filename");
+String pnum = request.getParameter("pagenum");
+String dt = request.getParameter("dateprocessed");
 
 
-List<String> firstName;
-List<String> lastName ;
-firstName = new ArrayList();
-firstName.add("Sumit");
-firstName.add("Amit");
-firstName.add("Lalit");
-lastName = new ArrayList();
-lastName.add("Nagpal");
-lastName.add("Pandey");
-lastName.add("Yadav");	
+List<String> fnames;
+List<String> pnums ;
+List<String> dts ;
+fnames = new ArrayList();
+//fnames.add("Sumit");
+//fnames.add("Amit");
+//fnames.add("Lalit");
+pnums = new ArrayList();
+//pnums.add("Nagpal");
+//pnums.add("Pandey");
+//pnums.add("Yadav");
+dt = new ArrayList();
 
 if(fname !=null) {
 	firstName.add(fname);
@@ -28,16 +31,20 @@ if(fname !=null) {
 
 %>
 <div class="container">
-	<h2  style="margin-bottom:50px;"> Simple Web Application Version 3 </h2>
+	<h2  style="margin-bottom:50px;"> Update processed data </h2>
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group">
-		    <label for="firstName">First name :</label>
-			<input type="text" name="firstname"  class="form-control" placeholder="First Name" id = "fname">
+		    <label for="firstName">PDF File name :</label>
+			<input type="text" name="filename"  class="form-control" placeholder="filename" id = "filename">
 		</div>
 		<div class="form-group"  style="margin-left:50px;">
-			<label for="lastName">Last name:</label>
-			<input type="text" name="lastname" class="form-control" id = "lname" placeholder="Last Name">
+			<label for="lastName">Page No processed:</label>
+			<input type="text" name="pagenum" class="form-control" id = "pagenum" placeholder="pagenum">
 		</div>
+		<div class="form-group"  style="margin-left:50px;">
+			<label for="lastName">Date:</label>
+			<input type="text" name="dateprocessed" class="form-control" id = "dateprocessed" placeholder="dateprocessed">
+		</div>		
 		<div class="form-group">
 		</div>
 		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left:80px;">Submit</button>
@@ -46,17 +53,57 @@ if(fname !=null) {
 <table class="table table-striped"  style="margin-top:50px;">
 		<tr>
 			 <thead class="thead-dark">
-			<th class="thead-light"> Firstname </th>
-			<th class="thead-light"> Lastname</th>
+			<th class="thead-light"> File name  </th>
+			<th class="thead-light"> Page number</th>
+			<th class="thead-light"> Date</th>	 
 			 <thead class="thead-dark">
 		</tr>
-		<% for(int i=0; i<firstName.size(); i++) {
+		<% for(int i=0; i<fnames.size(); i++) {
 			
-			%><tr><td><%=firstName.get(i) %></td>
-			<td><%=lastName.get(i) %></td>
+			%><tr><td><%=fnames.get(i) %></td>
+			<td><%=pnum.get(i) %></td>
+			<td><%=dts.get(i) %></td>	 
 			</tr>
 		<%}%>
 	</table>	
+	</div>
+	<div>
+<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+
+<p id="demo"></p>
+  
+<script>
+function myFunction(){
+  var x = document.getElementById("myFile");
+  var txt = "";
+  if ('files' in x) {
+    if (x.files.length == 0) {
+      txt = "Select one or more files.";
+    } else {
+      for (var i = 0; i < x.files.length; i++) {
+        txt += "<br><strong>" + (i+1) + ". file</strong><br>";
+        var file = x.files[i];
+        if ('name' in file) {
+          txt += "name: " + file.name + "<br>";
+        }
+        if ('size' in file) {
+          txt += "size: " + file.size + " bytes <br>";
+        }
+      }
+    }
+  } 
+  else {
+    if (x.value == "") {
+      txt += "Select one or more files.";
+    } else {
+      txt += "The files property is not supported by your browser!";
+      txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
+    }
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>	
+	
 	</div>
 </body>
 </html>
