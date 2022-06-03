@@ -9,13 +9,13 @@ String fname = request.getParameter("filename");
 String pnum = request.getParameter("pagenum");
 String dt = request.getParameter("dateprocessed");
 
-   List<String> fnames = request.getAttribute("fnames") != null ?  (ArrayList<String>) request.getAttribute("fnames") : new ArrayList();
-   List<String> pnums = request.getAttribute("pnums") != null ?  (ArrayList<String>) request.getAttribute("pnums") : new ArrayList();
-   List<String> dts = request.getAttribute("dts") != null ?  (ArrayList<String>) request.getAttribute("dts") : new ArrayList();
+   List<String> fnames = request.getSession().getAttribute("fnames") != null ?  (ArrayList<String>) request.getSession().getAttribute("fnames") : new ArrayList();
+   List<String> pnums = request.getSession().getAttribute("pnums") != null ?  (ArrayList<String>) request.getSession().getAttribute("pnums") : new ArrayList();
+   List<String> dts = request.getSession().getAttribute("dts") != null ?  (ArrayList<String>) request.getSession().getAttribute("dts") : new ArrayList();
    
-   request.setAttribute("fnames",fnames);
-   request.setAttribute("pnums",pnums);
-   request.setAttribute("dts",dts);
+   session.setAttribute("fnames",fnames);
+   session.setAttribute("pnums",pnums);
+   session.setAttribute("dts",dts);
 
 
 
