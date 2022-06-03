@@ -9,15 +9,9 @@ String fname = request.getParameter("filename");
 String pnum = request.getParameter("pagenum");
 String dt = request.getParameter("dateprocessed");
 
-if( request.getParameter("fnames") == null){
    List<String> fnames = new ArrayList();
    List<String> pnums = new ArrayList();
    List<String> dts = new ArrayList();
-   session.setAttribute("fnames",fnames); 
-   session.setAttribute("pnums",pnums); 
-   session.setAttribute("dts",dts); 
-}
-
 
 if(fname !=null) {
 	fnames.add(fname);
