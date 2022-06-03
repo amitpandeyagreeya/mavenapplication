@@ -15,13 +15,13 @@ List<String> fnames = new ArrayList();
 List<String> pnums = new ArrayList();
 List<String> dts = new ArrayList();
 
-if(fname && fname != null){
+if(fname != null){
    fnames.add(fname);
 }
-if(pnum && pnum != null){
+if(pnum != null){
    pnums.add(pnum);
 }
-if(dt && dt != null){
+if(dt != null){
    dts.add(dt);
 }
 
