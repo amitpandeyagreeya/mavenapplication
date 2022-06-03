@@ -15,15 +15,7 @@ List<String> fnames = new ArrayList();
 List<String> pnums = new ArrayList();
 List<String> dts = new ArrayList();
 
-if(fname != null){
-   fnames.add(fname);
-}
-if(pnum != null){
-   pnums.add(pnum);
-}
-if(dt != null){
-   dts.add(dt);
-}
+
 
 %>
 <div class="container">
