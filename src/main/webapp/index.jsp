@@ -33,7 +33,7 @@ List<String> dts = new ArrayList();
 		</div>		
 		<div class="form-group">
 		</div>
-		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left:80px;">Submit</button>
+		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 1028px;margin-top: -35px;">Submit</button>
 	</form>
 
 <table class="table table-striped"  style="margin-top:50px;">
@@ -52,6 +52,16 @@ List<String> dts = new ArrayList();
 			</tr>
 		<%}%>
 	</table>	
+	</div>
+	<div  style="margin-top:50px;">
+      <h3>File Upload:</h3>
+      Select a file to upload: <br />
+      <form action = "UploadServlet" method = "post"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" size = "50" />
+         <br />
+         <input type = "submit" value = "Upload File" />
+      </form>	
 	</div>
 </body>
 </html>
