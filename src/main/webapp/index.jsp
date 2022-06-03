@@ -11,23 +11,9 @@ String pnum = request.getParameter("pagenum");
 String dt = request.getParameter("dateprocessed");
 
 
-List<String> fnames;
-List<String> pnums ;
-List<String> dts ;
-fnames = new ArrayList();
-//fnames.add("Sumit");
-//fnames.add("Amit");
-//fnames.add("Lalit");
-pnums = new ArrayList();
-//pnums.add("Nagpal");
-//pnums.add("Pandey");
-//pnums.add("Yadav");
-dt = new ArrayList();
-
-if(fname !=null) {
-	firstName.add(fname);
-	lastName.add(lname);
-}
+List<String> fnames = new ArrayList();
+List<String> pnums = new ArrayList();
+List<String> dts = new ArrayList();
 
 %>
 <div class="container">
