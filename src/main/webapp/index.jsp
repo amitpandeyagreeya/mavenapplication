@@ -47,7 +47,7 @@ List<String> dts = new ArrayList();
 		<% for(int i=0; i<fnames.size(); i++) {
 			
 			%><tr><td><%=fnames.get(i) %></td>
-			<td><%=pnum.get(i) %></td>
+			<td><%=pnums.get(i) %></td>
 			<td><%=dts.get(i) %></td>	 
 			</tr>
 		<%}%>
