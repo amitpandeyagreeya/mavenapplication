@@ -15,22 +15,26 @@ List<String> fnames = new ArrayList();
 List<String> pnums = new ArrayList();
 List<String> dts = new ArrayList();
 
-
+if(fname !=null) {
+	fnames.add(fname);
+	pnums.add(pnum);
+	dts.add(dt);
+}
 
 %>
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data </h2>
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group">
-		    <label for="firstName">PDF File name :</label>
+		    <label for="filename">PDF File name :</label>
 			<input type="text" name="filename"  class="form-control" placeholder="filename" id = "filename">
 		</div>
 		<div class="form-group"  style="margin-left:50px;">
-			<label for="lastName">Page No processed:</label>
+			<label for="pagenum">Page No processed:</label>
 			<input type="text" name="pagenum" class="form-control" id = "pagenum" placeholder="pagenum">
 		</div>
 		<div class="form-group"  style="margin-left:50px;">
-			<label for="lastName">Date:</label>
+			<label for="dateprocessed">Date:</label>
 			<input type="text" name="dateprocessed" class="form-control" id = "dateprocessed" placeholder="dateprocessed">
 		</div>		
 		<div class="form-group">
