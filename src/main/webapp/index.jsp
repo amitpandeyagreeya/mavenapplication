@@ -21,9 +21,9 @@ String companyName = request.getParameter("companyName");
    List<String> pnums = request.getSession().getAttribute("pnums") != null ?  (ArrayList<String>) request.getSession().getAttribute("pnums") : new ArrayList();
    List<String> dts = request.getSession().getAttribute("dts") != null ?  (ArrayList<String>) request.getSession().getAttribute("dts") : new ArrayList();
    List<String> certificateNos = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("certificateNos") : new ArrayList();
-   List<String> memberNames = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("memberNames") : new ArrayList();
-   List<String> companyNames = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("companyNames") : new ArrayList();
-   List<String> shares = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("shares") : new ArrayList();
+   List<String> memberNames = request.getSession().getAttribute("memberNames") != null ?  (ArrayList<String>) request.getSession().getAttribute("memberNames") : new ArrayList();
+   List<String> companyNames = request.getSession().getAttribute("companyNames") != null ?  (ArrayList<String>) request.getSession().getAttribute("companyNames") : new ArrayList();
+   List<String> shares = request.getSession().getAttribute("shares") != null ?  (ArrayList<String>) request.getSession().getAttribute("shares") : new ArrayList();
    
    session.setAttribute("fnames",fnames);
    session.setAttribute("pnums",pnums);
