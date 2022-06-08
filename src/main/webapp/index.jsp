@@ -42,7 +42,23 @@ if(fname !=null) {
 		<div class="form-group"  style="margin-left:50px;">
 			<label for="dateprocessed">Date:</label>
 			<input type="text" name="dateprocessed" class="form-control" id = "dateprocessed" placeholder="dateprocessed">
-		</div>		
+		</div>
+		<div class="form-group"  style="margin-left:50px;">
+			<label for="certificateNo">Certificate No:</label>
+			<input type="text" name="certificateNo" class="form-control" id = "certificateNo" placeholder="certificateNo">
+		</div>	
+		<div class="form-group"  style="margin-left:50px;">
+			<label for="memberName">Member Name:</label>
+			<input type="text" name="memberName" class="form-control" id = "memberName" placeholder="memberName">
+		</div>	
+		<div class="form-group"  style="margin-left:50px;">
+			<label for="nofShares">No Of Shares:</label>
+			<input type="text" name="nofShares" class="form-control" id = "nofShares" placeholder="nofShares">
+		</div>	
+		<div class="form-group"  style="margin-left:50px;">
+			<label for="companyName">Company Name:</label>
+			<input type="text" name="companyName" class="form-control" id = "companyName" placeholder="companyName">
+		</div>	
 		<div class="form-group">
 		</div>
 		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 1028px;margin-top: -35px;">Submit</button>
