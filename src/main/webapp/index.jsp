@@ -31,15 +31,15 @@ if(fname !=null) {
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data </h2>
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
-		<div id="form" class="form-group">
+		<div id="form" class="form-group" style="margin-left: 50px;margin-bottom: 20px;">
 		    <label for="filename">PDF File name :</label>
 			<input type="text" name="filename"  class="form-control" placeholder="filename" id = "filename">
 		</div>
-		<div class="form-group"  style="margin-left:50px;">
+		<div class="form-group"  style="margin-left:50px;margin-bottom:20px">
 			<label for="pagenum">Page No processed:</label>
 			<input type="text" name="pagenum" class="form-control" id = "pagenum" placeholder="pagenum">
 		</div>
-		<div class="form-group"  style="margin-left:50px;">
+		<div class="form-group"  style="margin-left:50px;margin-bottom:20px">
 			<label for="dateprocessed">Date:</label>
 			<input type="text" name="dateprocessed" class="form-control" id = "dateprocessed" placeholder="dateprocessed">
 		</div>
@@ -61,7 +61,7 @@ if(fname !=null) {
 		</div>	
 		<div class="form-group">
 		</div>
-		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 1028px;margin-top: -35px;">Submit</button>
+		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;">Submit</button>
 	</form>
 
 <table class="table table-striped"  style="margin-top:50px;">
