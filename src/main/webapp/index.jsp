@@ -30,8 +30,8 @@ String companyName = request.getParameter("companyName");
    session.setAttribute("dts",dts);
    session.setAttribute("certificateNos",certificateNos);
    session.setAttribute("memberNames",memberNames);
-   session.setAttribute("companyNames",companyNames);
-   session.setAttribute("shares",shares);
+   session.setAttribute("companyNames",shares);
+   session.setAttribute("shares",companyNames);
 
 
 
