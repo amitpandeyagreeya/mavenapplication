@@ -8,14 +8,30 @@
 String fname = request.getParameter("filename");
 String pnum = request.getParameter("pagenum");
 String dt = request.getParameter("dateprocessed");
+String certificateNo = request.getParameter("certificateNo");
+String memberName = request.getParameter("memberName");
+String nofShares = request.getParameter("nofShares");
+String companyName = request.getParameter("companyName");
+
+
+
+
 
    List<String> fnames = request.getSession().getAttribute("fnames") != null ?  (ArrayList<String>) request.getSession().getAttribute("fnames") : new ArrayList();
    List<String> pnums = request.getSession().getAttribute("pnums") != null ?  (ArrayList<String>) request.getSession().getAttribute("pnums") : new ArrayList();
    List<String> dts = request.getSession().getAttribute("dts") != null ?  (ArrayList<String>) request.getSession().getAttribute("dts") : new ArrayList();
+   List<String> certificateNos = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("certificateNos") : new ArrayList();
+   List<String> memberNames = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("memberNames") : new ArrayList();
+   List<String> companyNames = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("companyNames") : new ArrayList();
+   List<String> shares = request.getSession().getAttribute("certificateNos") != null ?  (ArrayList<String>) request.getSession().getAttribute("shares") : new ArrayList();
    
    session.setAttribute("fnames",fnames);
    session.setAttribute("pnums",pnums);
    session.setAttribute("dts",dts);
+   session.setAttribute("certificateNos",certificateNos);
+   session.setAttribute("memberNames",memberNames);
+   session.setAttribute("companyNames",companyNames);
+   session.setAttribute("shares",shares);
 
 
 
@@ -45,11 +61,11 @@ if(fname !=null) {
 		</div>
 		<div class="form-group"  style="margin-left:50px;">
 			<label for="certificateNo">Certificate No:</label>
-			<input type="text" name="certificateNo" class="form-control" id = "certificateNo" placeholder="certificateNo">
+			<input type="text" name="certificateNo" class="form-control" id = "certificateNo" placeholder="certificateNo" style="margin-left:8px;">
 		</div>	
 		<div class="form-group"  style="margin-left:50px;">
 			<label for="memberName">Member Name:</label>
-			<input type="text" name="memberName" class="form-control" id = "memberName" placeholder="memberName">
+			<input type="text" name="memberName" class="form-control" id = "memberName" placeholder="memberName" style="margin-left:36px;">
 		</div>	
 		<div class="form-group"  style="margin-left:50px;">
 			<label for="nofShares">No Of Shares:</label>
@@ -69,14 +85,22 @@ if(fname !=null) {
 			 <thead class="thead-dark">
 			<th class="thead-light"> File name  </th>
 			<th class="thead-light"> Page number</th>
-			<th class="thead-light"> Date</th>	 
+			<th class="thead-light"> Date</th>
+				 <th class="thead-light"> Certificate No:</th>
+				 <th class="thead-light"> Member Name:</th>
+				 <th class="thead-light"> No Of Shares:</th>
+				  <th class="thead-light"> Company Name:</th>
 			 <thead class="thead-dark">
 		</tr>
 		<% for(int i=0; i<fnames.size(); i++) {
 			
 			%><tr><td><%=fnames.get(i) %></td>
 			<td><%=pnums.get(i) %></td>
-			<td><%=dts.get(i) %></td>	 
+			<td><%=certificateNos.get(i) %></td>
+			<td><%=memberNames.get(i) %></td>
+			<td><%=shares.get(i) %></td>
+			<td><%=companyNames.get(i) %></td>
+			
 			</tr>
 		<%}%>
 	</table>	
