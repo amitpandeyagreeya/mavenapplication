@@ -39,6 +39,10 @@ if(fname !=null) {
 	fnames.add(fname);
 	pnums.add(pnum);
 	dts.add(dt);
+	certificateNos.add(certificateNo);
+	memberNames.add(memberName);
+	companyNames.add(nofShares);
+	shares.add(companyName);
 }
 
 
@@ -68,7 +72,7 @@ if(fname !=null) {
 			<input type="text" name="memberName" class="form-control" id = "memberName" placeholder="memberName" style="margin-left:36px;">
 		</div>	
 		<div class="form-group"  style="margin-left:50px;">
-			<label for="nofShares">No Of Shares:</label>
+			<label for="nofShares" style="margin-left:-56px;text-align: center;overflow-wrap: break-word;width: 92px;">No Of Shares:</label>
 			<input type="text" name="nofShares" class="form-control" id = "nofShares" placeholder="nofShares">
 		</div>	
 		<div class="form-group"  style="margin-left:50px;">
@@ -98,6 +102,10 @@ if(fname !=null) {
 				 <td><%=fnames.get(i) %></td>
 				<td><%=pnums.get(i) %></td>
 				<td><%=dts.get(i) %></td>
+				 <td><%=certificateNos.get(i) %></td>
+				  <td><%=memberNames.get(i) %></td>
+				  <td><%=shares.get(i) %></td>
+				 <td><%=companyNames.get(i) %></td>
 				
 			
 			</tr>
