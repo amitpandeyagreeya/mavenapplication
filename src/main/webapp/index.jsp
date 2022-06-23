@@ -41,8 +41,8 @@ if(fname !=null) {
 	dts.add(dt);
 	certificateNos.add(certificateNo);
 	memberNames.add(memberName);
-	companyNames.add(nofShares);
-	shares.add(companyName);
+	companyNames.add(companyName);
+	shares.add(nofShares);
 }
 
 
