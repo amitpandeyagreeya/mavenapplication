@@ -65,7 +65,7 @@ if(fname !=null) {
 		</div>
 		<div class="form-group"  style="margin-left:50px;">
 			<label for="certificateNo">Certificate No:</label>
-			<input type="text" name="certificateNo" class="form-control" id = "certificateNo" placeholder="certificateNo" style="margin-left:8px;">
+			<input type="text" name="certificateNo" class="form-control" id = "certificateNo" placeholder="certificateNo's" style="margin-left:8px;">
 		</div>	
 		<div class="form-group"  style="margin-left:50px;">
 			<label for="memberName">Member Name:</label>
