@@ -15,7 +15,7 @@ String category = request.getParameter("category");
 String brand = request.getParameter("brand");
 String expirationDate = request.getParameter("expirationDate");
 String itemSize = request.getParameter("itemSize");
-
+%>
   <tr>
 			 <thead class="thead-dark">
 				<th class="thead-light"> UPC  </th>
