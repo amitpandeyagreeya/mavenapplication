@@ -31,9 +31,9 @@ String itemSize = request.getParameter("itemSize");
 			<thead class="thead-dark">
 		</tr>	
 		
+		<% for(int i=0; i<fnames.size(); i++) {
 		
-		
-		<tr>
+		%><tr>
 				 <td><%=upc.get(i) %></td>
 				<td> <%=items.get(i) %></td>
 				<td><%=itemdescription.get(i) %></td>
