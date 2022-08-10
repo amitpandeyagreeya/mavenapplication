@@ -6,7 +6,7 @@
 <body class="bg-dark text-white">
 <%
 String upc = request.getParameter("upc");
-String "itemName" = request.getParameter("itemName");
+String itemName = request.getParameter("itemName");
 String itemDescription = request.getParameter("itemDescription");
 String itemPrice = request.getParameter("itemPrice");
 String unitCost = request.getParameter("unitCost");
