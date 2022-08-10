@@ -34,16 +34,7 @@ String itemSize = request.getParameter("itemSize");
 		<% for(int i=0; i<fnames.size(); i++) {
 		
 		%><tr>
-				 <td><%=upc.get(i) %></td>
-				<td> <%=items.get(i) %></td>
-				<td><%=itemdescription.get(i) %></td>
-				 <td><%=itemprice.get(i) %></td>
-				  <td><%=unitcost.get(i) %></td>
-				  <td><%=startinginventory.get(i) %></td>
-				 <td><%=category.get(i) %></td>
-				 <td><%=brand.get(i) %></td>
-				 <td><%=expirationdate.get(i) %></td>
-				 <td><%=itemsize.get(i) %></td>
+				
 				
 			
 			</tr>
