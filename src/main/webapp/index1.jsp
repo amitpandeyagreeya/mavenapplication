@@ -156,7 +156,7 @@ if(upc !=null) {
 				<th class="thead-light"> Item Size</th>
 			<thead class="thead-dark">
 		</tr>	
-		<% for(int i=0; i<fnames.size(); i++) {
+		<% for(int i=0; i<upc.size(); i++) {
 			
 			%><tr>
 				 <td><%=upc.get(i) %></td>
