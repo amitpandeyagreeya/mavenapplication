@@ -31,7 +31,7 @@ String itemSize = request.getParameter("itemSize");
 			<thead class="thead-dark">
 		</tr>	
 		
-		<% for(int i=0; i<fnames.size(); i++) {
+		<% for(int i=0; i<upc.size(); i++) {
 		
 		%><tr>
 				
@@ -72,13 +72,14 @@ String itemSize = request.getParameter("itemSize");
 
 
 if(upc !=null) {
-	fnames.add(fname);
-	pnums.add(pnum);
-	dts.add(dt);
-	certificateNos.add(certificateNo);
-	memberNames.add(memberName);
-	companyNames.add(companyName);
-	shares.add(nofShares);
+	upc.add(upc);
+	items.add(items);
+	itemdescription.add(itemdescription);
+	unitcost.add(unitcost);
+	category.add(category);
+	brand.add(brand);
+	expirationdate.add(expirationdate);
+	itemsize.add(itemsize);
 }
 
 
