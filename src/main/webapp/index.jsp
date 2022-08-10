@@ -100,7 +100,13 @@ if(fname !=null) {
 			
 			%><tr>
 				
-				
+				 <td><%=fnames.get(i) %></td>
+				<td><%=pnums.get(i) %></td>
+				<td><%=dts.get(i) %></td>
+				 <td><%=certificateNos.get(i) %></td>
+				  <td><%=memberNames.get(i) %></td>
+				  <td><%=shares.get(i) %></td>
+				 <td><%=companyNames.get(i) %></td>
 			
 			</tr>
 		<%}%>
