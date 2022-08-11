@@ -139,7 +139,7 @@ if(upc !=null) {
 				 <td><%=itemsizeL.get(i) %></td>
 			
 			</tr>			 
-		
+		<%}%>
 	</table>	
 	</div>
 	
