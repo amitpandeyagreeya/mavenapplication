@@ -5,33 +5,6 @@
 	</head>
 <body class="bg-dark text-white">
 
-  <tr>
-			 <thead class="thead-dark">
-				<th class="thead-light"> UPC  </th>
-				<th class="thead-light"> Item Name</th>
-				<th class="thead-light"> Item Description</th>
-				<th class="thead-light"> Item Price Per Unit</th>
-				<th class="thead-light"> Unit Cost</th>
-				<th class="thead-light"> Starting Inventory:</th>
-				<th class="thead-light"> Category</th>
-				<th class="thead-light"> Brand</th>
-				<th class="thead-light"> Expiration Date</th>
-				<th class="thead-light"> Item Size</th>
-			<thead class="thead-dark">
-		</tr>	
-		
-		<tr>
-				
-				
-			
-			</tr>
-			
-			
-			
-  
-
-
-
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
