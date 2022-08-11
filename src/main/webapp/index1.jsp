@@ -50,7 +50,7 @@ if(upc !=null) {
 	upcL.add(upc);
 	itemsL.add(itemName);
 	itemdescriptionL.add(itemDescription);
-	itempriceL.add(itemPrice);
+	itemPriceL.add(itemPrice);
 	unitcostL.add(unitCost);
 	categoryL.add(category);
 	brandL.add(brand);
