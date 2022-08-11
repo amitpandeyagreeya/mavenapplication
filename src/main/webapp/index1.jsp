@@ -4,18 +4,7 @@
 	 <link rel="stylesheet" href = "bootstrap.min.css">
 	</head>
 <body class="bg-dark text-white">
-<%
-String upc = request.getParameter("upc");
-String itemName = request.getParameter("itemName");
-String itemDescription = request.getParameter("itemDescription");
-String itemPrice = request.getParameter("itemPrice");
-String unitCost = request.getParameter("unitCost");
-String staringInventory = request.getParameter("staringInventory");
-String category = request.getParameter("category");
-String brand = request.getParameter("brand");
-String expirationDate = request.getParameter("expirationDate");
-String itemSize = request.getParameter("itemSize");
-%>
+
   <tr>
 			 <thead class="thead-dark">
 				<th class="thead-light"> UPC  </th>
@@ -31,9 +20,7 @@ String itemSize = request.getParameter("itemSize");
 			<thead class="thead-dark">
 		</tr>	
 		
-		<% for(int i=0; i<upc.size(); i++) {
-		
-		%><tr>
+		<tr>
 				
 				
 			
@@ -41,50 +28,10 @@ String itemSize = request.getParameter("itemSize");
 			
 			
 			
-   List<String> upc = request.getSession().getAttribute("upc") != null ?  (ArrayList<String>) request.getSession().getAttribute("upc") : new ArrayList();
-			 
-   List<String> items = request.getSession().getAttribute("items") != null ?  (ArrayList<String>) request.getSession().getAttribute("items") : new ArrayList();
-   
-   List<String> itemdescription = request.getSession().getAttribute("itemdescription") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemdescription") : new ArrayList();
-   
-   List<String> itemprice = request.getSession().getAttribute("itemprice") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemprice") : new ArrayList();
-   
-   List<String> unitcost = request.getSession().getAttribute("unitcost") != null ?  (ArrayList<String>) request.getSession().getAttribute("unitcost") : new ArrayList();
-   
-   List<String> category = request.getSession().getAttribute("category") != null ?  (ArrayList<String>) request.getSession().getAttribute("category") : new ArrayList();
-   
-   List<String> brand = request.getSession().getAttribute("brand") != null ?  (ArrayList<String>) request.getSession().getAttribute("brand") : new ArrayList();
-   
-   List<String> expirationdate = request.getSession().getAttribute("expirationdate") != null ?  (ArrayList<String>) request.getSession().getAttribute("expirationdate") : new ArrayList();
-   
-   List<String> itemsize = request.getSession().getAttribute("itemsize") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemsize") : new ArrayList();
-   
-   session.setAttribute("upc",upc);
-   session.setAttribute("items",items);
-   session.setAttribute("itemdescription",itemdescription);
-   session.setAttribute("itemprice",itemprice);
-   session.setAttribute("unitcost",unitcost);
-   session.setAttribute("category",category);
-   session.setAttribute("brand",brand);
-   session.setAttribute("expirationdate",expirationdate);
-   session.setAttribute("itemsize",itemsize);
+  
 
 
 
-if(upc !=null) {
-	upc.add(upc);
-	items.add(items);
-	itemdescription.add(itemdescription);
-	unitcost.add(unitcost);
-	category.add(category);
-	brand.add(brand);
-	expirationdate.add(expirationdate);
-	itemsize.add(itemsize);
-}
-
-
-
-%>
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
 	<form action="index.jsp" id="form1" class="form-inline" method = "post">
@@ -148,34 +95,9 @@ if(upc !=null) {
 				<th class="thead-light"> Item Size</th>
 			<thead class="thead-dark">
 		</tr>	
-		<% for(int i=0; i<upc.size(); i++) {
-			
-			%><tr>
-				 <td><%=upc.get(i) %></td>
-				 <td> <%=items.get(i) %></td>
-				 <td><%=itemdescription.get(i) %></td>
-				 <td><%=itemprice.get(i) %></td>
-				 <td><%=unitcost.get(i) %></td>
-				 <td><%=startinginventory.get(i) %></td>
-				 <td><%=category.get(i) %></td>
-				 <td><%=brand.get(i) %></td>
-				 <td><%=expirationdate.get(i) %></td>
-				 <td><%=itemsize.get(i) %></td>
-				
-			
-			</tr>
-		<%}%>
+		
 	</table>	
 	</div>
-	<div  style="margin-top:50px;">
-      <h3>File Upload:</h3>
-      Select a file to upload: <br />
-      <form action = "UploadServlet" method = "post"
-         enctype = "multipart/form-data">
-         <input type = "file" name = "file" size = "50" />
-         <br />
-         <input type = "submit" value = "Upload File" />
-      </form>	
-	</div>
+	
 </body>
 </html>
