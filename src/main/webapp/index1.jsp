@@ -16,7 +16,7 @@ String brand = request.getParameter("brand");
 String expirationDate = request.getParameter("expirationDate");
 String itemSize = request.getParameter("itemSize");
 
-List<String> upcL = request.getSession().getAttribute("upc") != upcL ?  (ArrayList<String>) request.getSession().getAttribute("upcL") : new ArrayList();
+List<String> upcL = request.getSession().getAttribute("upcL") != null ?  (ArrayList<String>) request.getSession().getAttribute("upcL") : new ArrayList();
 			 
    List<String> itemsL = request.getSession().getAttribute("itemsL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemsL") : new ArrayList();
    
