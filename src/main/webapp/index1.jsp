@@ -24,6 +24,7 @@ List<String> upcL = request.getSession().getAttribute("upcL") != null ?  (ArrayL
    
    List<String> itemPriceL = request.getSession().getAttribute("itemPriceL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemPriceL") : new ArrayList();
    
+   List<String> staringInventoryL =  request.getSession().getAttribute("staringInventoryL") != null ?  (ArrayList<String>) request.getSession().getAttribute("staringInventoryL") : new ArrayList();
    List<String> unitcostL = request.getSession().getAttribute("unitcostL") != null ?  (ArrayList<String>) request.getSession().getAttribute("unitcostL") : new ArrayList();
    
    List<String> categoryL = request.getSession().getAttribute("categoryL") != null ?  (ArrayList<String>) request.getSession().getAttribute("categoryL") : new ArrayList();
@@ -38,6 +39,7 @@ List<String> upcL = request.getSession().getAttribute("upcL") != null ?  (ArrayL
    session.setAttribute("itemsL",itemsL);
    session.setAttribute("itemdescriptionL",itemdescriptionL);
    session.setAttribute("itemPriceL",itemPriceL);
+   session.setAttribute("staringInventoryL",staringInventoryL);
    session.setAttribute("unitcostL",unitcostL);
    session.setAttribute("categoryL",categoryL);
    session.setAttribute("brandL",brandL);
@@ -133,6 +135,7 @@ if(upc !=null) {
 				<td><%=itemdescriptionL.get(i) %></td>
 				<td><%=itemPriceL.get(i) %></td>
 				 <td><%=unitcostL.get(i) %></td>
+				  <td><%=staringInventoryL.get(i) %></td>
 				 <td><%=categoryL.get(i) %></td>
 				  <td><%=brandL.get(i) %></td>
 				 <td><%=expirationdateL.get(i) %></td>
