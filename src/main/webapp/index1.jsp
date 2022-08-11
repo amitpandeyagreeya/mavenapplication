@@ -4,10 +4,12 @@
 	 <link rel="stylesheet" href = "bootstrap.min.css">
 	</head>
 <body class="bg-dark text-white">
-
+	<%
+String upc = request.getParameter("upc");%>
+<p><%=upc%></p>
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
-	<form action="index.jsp" id="form1" class="form-inline" method = "post">
+	<form action="index1.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group" style="margin-left: 50px;margin-bottom: 20px;">
 		    <label for="upc">UPC :</label>
 			<input type="text" name="upc"  class="form-control" placeholder="upc" id = "upc">
