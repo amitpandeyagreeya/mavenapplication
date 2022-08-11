@@ -124,6 +124,21 @@ if(upc !=null) {
 				<th class="thead-light"> Item Size</th>
 			<thead class="thead-dark">
 		</tr>	
+	<% for(int i=0; i<upcL.size(); i++) {
+			
+		%><tr>
+				
+				 <td><%=upcL.get(i) %></td>
+				<td><%=itemsL.get(i) %></td>
+				<td><%=itemdescriptionL.get(i) %></td>
+				<td><%=itemPriceL.get(i) %></td>
+				 <td><%=unitcostL.get(i) %></td>
+				  <td><%=categoryL.get(i) %></td>
+				  <td><%=brandL.get(i) %></td>
+				 <td><%=expirationdateL.get(i) %></td>
+				 <td><%=itemsizeL.get(i) %></td>
+			
+			</tr>			 
 		
 	</table>	
 	</div>
