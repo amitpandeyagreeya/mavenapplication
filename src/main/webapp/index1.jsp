@@ -22,7 +22,7 @@ List<String> upcL = request.getSession().getAttribute("upcL") != null ?  (ArrayL
    
    List<String> itemdescriptionL = request.getSession().getAttribute("itemdescriptionL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemdescriptionL") : new ArrayList();
    
-   List<String> itempriceL = request.getSession().getAttribute("itempriceL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itempriceL") : new ArrayList();
+   List<String> itemPriceL = request.getSession().getAttribute("itemPriceL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemPriceL") : new ArrayList();
    
    List<String> unitcostL = request.getSession().getAttribute("unitcostL") != null ?  (ArrayList<String>) request.getSession().getAttribute("unitcostL") : new ArrayList();
    
@@ -37,7 +37,7 @@ List<String> upcL = request.getSession().getAttribute("upcL") != null ?  (ArrayL
    session.setAttribute("upcL",upcL);
    session.setAttribute("itemsL",itemsL);
    session.setAttribute("itemdescriptionL",itemdescriptionL);
-   session.setAttribute("itempriceL",itempriceL);
+   session.setAttribute("itemPriceL",itemPriceL);
    session.setAttribute("unitcostL",unitcostL);
    session.setAttribute("categoryL",categoryL);
    session.setAttribute("brandL",brandL);
