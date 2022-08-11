@@ -49,13 +49,13 @@ List<String> upcL = request.getSession().getAttribute("upc") != upcL ?  (ArrayLi
 if(upc !=null) {
 	upcL.add(upc);
 	itemsL.add(itemName);
-	itemdescriptionL.add(itemdescription);
+	itemdescriptionL.add(itemDescription);
 	itempriceL.add(itemPrice);
-	unitcostL.add(unitcost);
+	unitcostL.add(unitCost);
 	categoryL.add(category);
 	brandL.add(brand);
-	expirationdateL.add(expirationdate);
-	itemsizeL.add(itemsize);
+	expirationdateL.add(expirationDate);
+	itemsizeL.add(itemSize);
 	
 }
 
