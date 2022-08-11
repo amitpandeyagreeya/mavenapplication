@@ -5,8 +5,61 @@
 	</head>
 <body class="bg-dark text-white">
 	<%
-String upc = request.getParameter("upc");%>
-<p><%=upc%></p>
+String upc = request.getParameter("upc");
+String itemName = request.getParameter("itemName");
+String itemDescription = request.getParameter("itemDescription");
+String itemPrice = request.getParameter("itemPrice");
+String unitCost = request.getParameter("unitCost");
+String staringInventory = request.getParameter("staringInventory");
+String category = request.getParameter("category");
+String brand = request.getParameter("brand");
+String expirationDate = request.getParameter("expirationDate");
+String itemSize = request.getParameter("itemSize");
+
+List<String> upcL = request.getSession().getAttribute("upc") != upcL ?  (ArrayList<String>) request.getSession().getAttribute("upcL") : new ArrayList();
+			 
+   List<String> itemsL = request.getSession().getAttribute("itemsL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemsL") : new ArrayList();
+   
+   List<String> itemdescriptionL = request.getSession().getAttribute("itemdescriptionL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemdescriptionL") : new ArrayList();
+   
+   List<String> itempriceL = request.getSession().getAttribute("itempriceL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itempriceL") : new ArrayList();
+   
+   List<String> unitcostL = request.getSession().getAttribute("unitcostL") != null ?  (ArrayList<String>) request.getSession().getAttribute("unitcostL") : new ArrayList();
+   
+   List<String> categoryL = request.getSession().getAttribute("categoryL") != null ?  (ArrayList<String>) request.getSession().getAttribute("categoryL") : new ArrayList();
+   
+   List<String> brandL = request.getSession().getAttribute("brandL") != null ?  (ArrayList<String>) request.getSession().getAttribute("brandL") : new ArrayList();
+   
+   List<String> expirationdateL = request.getSession().getAttribute("expirationdateL") != null ?  (ArrayList<String>) request.getSession().getAttribute("expirationdateL") : new ArrayList();
+   
+   List<String> itemsizeL = request.getSession().getAttribute("itemsizeL") != null ?  (ArrayList<String>) request.getSession().getAttribute("itemsizeL") : new ArrayList();
+   
+   session.setAttribute("upcL",upcL);
+   session.setAttribute("itemsL",itemsL);
+   session.setAttribute("itemdescriptionL",itemdescriptionL);
+   session.setAttribute("itempriceL",itempriceL);
+   session.setAttribute("unitcostL",unitcostL);
+   session.setAttribute("categoryL",categoryL);
+   session.setAttribute("brandL",brandL);
+   session.setAttribute("expirationdateL",expirationdateL);
+   session.setAttribute("itemsizeL",itemsizeL);
+
+
+
+if(upc !=null) {
+	upcL.add(upc);
+	itemsL.add(items);
+	itemPriceL.add();
+	itemdescriptionL.add(itemdescription);
+	unitcostL.add(unitcost);
+	categoryL.add(category);
+	brandL.add(brand);
+	expirationdateL.add(expirationdate);
+	itemsizeL.add(itemsize);
+	
+}
+%>
+
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
 	<form action="index1.jsp" id="form1" class="form-inline" method = "post">
