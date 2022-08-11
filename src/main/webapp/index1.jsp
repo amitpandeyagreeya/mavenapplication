@@ -48,9 +48,9 @@ List<String> upcL = request.getSession().getAttribute("upc") != upcL ?  (ArrayLi
 
 if(upc !=null) {
 	upcL.add(upc);
-	itemsL.add(items);
-	itemPriceL.add();
+	itemsL.add(itemName);
 	itemdescriptionL.add(itemdescription);
+	itempriceL.add(itemPrice);
 	unitcostL.add(unitcost);
 	categoryL.add(category);
 	brandL.add(brand);
@@ -58,6 +58,7 @@ if(upc !=null) {
 	itemsizeL.add(itemsize);
 	
 }
+
 %>
 
 <div class="container">
