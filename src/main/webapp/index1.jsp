@@ -53,6 +53,7 @@ if(upc !=null) {
 	itemsL.add(itemName);
 	itemdescriptionL.add(itemDescription);
 	itemPriceL.add(itemPrice);
+	staringInventoryL.add(staringInventory);
 	unitcostL.add(unitCost);
 	categoryL.add(category);
 	brandL.add(brand);
