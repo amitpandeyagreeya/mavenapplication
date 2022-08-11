@@ -2,6 +2,11 @@
 <html>
 	<head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
+		<script type="text/javascript">
+			function editFunction(){
+				alert("here in function");
+			}
+		</script>
 	</head>
 <body class="bg-dark text-white">
 	<%
@@ -129,7 +134,7 @@ if(upc !=null) {
 		</tr>	
 	<% for(int i=0; i<upcL.size(); i++) {
 			
-		%><tr>
+		%><tr onclick="editFunction">
 				
 				 <td><%=upcL.get(i) %></td>
 				<td><%=itemsL.get(i) %></td>
