@@ -69,12 +69,12 @@ if(upc !=null) {
 			}
 			<%!
 			String rowNumStr = "<script>document.writeln(index)</script>";
-			int rowNum = Integer.parseInt(rowNumStr);
+			
 			%>
 			if(index > -1){
 				var upc = document.getElementById("upc");
 				upc.value = <%=upcL.get(0)%>;
-				alert(<%=rowNum%>
+				alert(<%=rowNumStr%>
 			}
 			
 		</script>
