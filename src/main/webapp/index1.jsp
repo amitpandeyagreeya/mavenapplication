@@ -73,7 +73,7 @@ if(upc !=null) {
 		</script>
 	</head>
 <body class="bg-dark text-white">
-	<p>index is <%=request.getParameter("rownum");%>
+	<p>index is <%=request.getParameter("rownum")%>
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
 	<form action="index1.jsp" id="form1" class="form-inline" method = "post">
