@@ -88,6 +88,8 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 			function checkButtonType(event) {
 				var button = document.getElementById("buttonClick");
 				button.value=event.target.id;
+				var upc = document.getElementById("rownum");
+				upc.value=<%=request.getParameter("rownum")%>;
 			}
 			function myFunction() {
 				alert('<%=request.getParameter("rownum")%>');
