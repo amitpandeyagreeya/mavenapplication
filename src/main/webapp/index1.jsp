@@ -4,6 +4,9 @@
 	 <link rel="stylesheet" href = "bootstrap.min.css">
 		<script type="text/javascript">
 			function editFunction(event){
+				
+				var index = event.target.parentNode.id;
+				alert(<%=upcL.get(index)%>); 
 				alert(event.target.parentNode.id);
 			}
 		</script>
