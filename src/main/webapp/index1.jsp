@@ -73,7 +73,7 @@ if(upc !=null) {
 			
 			<% if(request.getParameter("rownum")!=null && request.getParameter("rownum").length() > 0){
 			%>
-			document.getElementById("upc").value = <%=upcL.get(Integer.parseInt(request.getParameter("rownum")))%> ;
+			document.getElementById("upc").value = '<%=upcL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
 			<%}%>
 		</script>
 	</head>
