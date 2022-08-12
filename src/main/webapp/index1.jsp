@@ -83,6 +83,8 @@ if(upc !=null) {
 				document.getElementById("brand").value = '<%=brandL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
 				document.getElementById("expirationDate").value = '<%=expirationdateL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
 				document.getElementById("itemSize").value = '<%=itemsizeL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("udpate").style.display = 'block';
+				document.getElementById("submit").style.display = 'none';
 				<%}%>
 			}
 		</script>
@@ -135,7 +137,9 @@ if(upc !=null) {
 		<div class="form-group">
 		</div>
 		<input type="hidden" id="rownum" name="rownum"/>
-		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;">Submit</button>
+		
+		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "submit">Submit</button>
+		<button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "udpate" style="display:none;">Update</button>
 	</form>
 
 <table class="table table-striped"  style="margin-top:50px;">
