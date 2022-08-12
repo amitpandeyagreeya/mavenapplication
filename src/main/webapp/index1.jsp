@@ -70,6 +70,9 @@ if(upc !=null) {
 				upc.value = index;
 				document.getElementById('form1').submit();
 			}
+			function checkButtonType(event) {
+				alert("here in click");
+			}
 			function myFunction() {
 				<% if(request.getParameter("rownum")!=null && request.getParameter("rownum").length() > 0){
 				%>
@@ -144,8 +147,9 @@ if(upc !=null) {
 		<div class="form-group">
 		</div>
 		<input type="hidden" id="rownum" name="rownum"/>
-		
-		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "subBut">Submit</button>
+		<input type="hidden" id="buttonClick" name="requestType"/>
+		   		
+		  <button class="btn btn-default btn btn-info active" type="submit"   onclick="checkButtonType(event)" onClickstyle="margin-left: 486px;margin-top: 30px;" id = "subBut">Submit</button>
 		
 	</form>
 
