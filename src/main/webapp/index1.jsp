@@ -88,6 +88,7 @@ if(upc !=null) {
   					x.setAttribute("type", "submit");
   					x.setAttribute("style","margin-left: 486px;margin-top: 30px;");
   					x.setAttribute("id","update");
+					x.setAttribute("value","Update");
   					document.getElementById('form1').appendChild(x);
 				<%}%>
 				
