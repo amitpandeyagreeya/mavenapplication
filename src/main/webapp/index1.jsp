@@ -70,7 +70,8 @@ if(upc !=null) {
 				upc.value = index;
 				document.getElementById('form1').submit();
 			}
-			
+			var index =<%=request.getParameter("rownum")%>;
+			document.getElementById("upc").value = <%=upcL.get(Integer.parseInt(request.getParameter("rownum")))%> ;
 		</script>
 	</head>
 <body class="bg-dark text-white">
