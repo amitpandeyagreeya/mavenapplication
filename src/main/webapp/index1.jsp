@@ -58,7 +58,9 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 	itemsizeL.add(itemSize);
 	
 } else {
-	int rowNum = Integer.parseInt(request.getParameter("rownum"));
+	if(request.getParameter("rownum")!=null)){
+		int rowNum = Integer.parseInt(request.getParameter("rownum"));
+	
 	upcL.set(rowNum,upc);
 	itemsL.set(rowNum,itemName);
 	itemdescriptionL.set(rowNum,itemDescription);
@@ -69,6 +71,7 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 	brandL.set(rowNum,brand);
 	expirationdateL.set(rowNum,expirationDate);
 	itemsizeL.set(rowNum,itemSize);
+	}
 }
 
 %>
