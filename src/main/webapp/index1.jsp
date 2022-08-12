@@ -85,7 +85,14 @@ if(upc !=null) {
 				document.getElementById("itemSize").value = '<%=itemsizeL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
 				document.getElementById("udpate").style.display = 'block';
 				document.getElementById("submit").style.display = 'none';
+				document.getElementById("submit").remove();
+				var x = document.createElement("button");
+  					x.setAttribute("type", "submit");
+  					x.setAttribute("style","margin-left: 486px;margin-top: 30px;");
+  					x.setAttribute("id","update");
+  					document.getElementById('form1').appendChild(x);
 				<%}%>
+				
 			}
 		</script>
 	</head>
@@ -139,7 +146,7 @@ if(upc !=null) {
 		<input type="hidden" id="rownum" name="rownum"/>
 		
 		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "submit">Submit</button>
-		<button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;display:none;" id = "udpate" >Update</button>
+		
 	</form>
 
 <table class="table table-striped"  style="margin-top:50px;">
