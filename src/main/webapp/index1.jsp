@@ -3,8 +3,8 @@
 	<head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
 		<script type="text/javascript">
-			function editFunction(){
-				alert("here in function");
+			function editFunction(event){
+				alert(event.target.parentNode.id);
 			}
 		</script>
 	</head>
@@ -134,7 +134,7 @@ if(upc !=null) {
 		</tr>	
 	<% for(int i=0; i<upcL.size(); i++) {
 			
-		%><tr onclick="editFunction()">
+		%><tr id=<%=i%> onclick="editFunction()">
 				
 				 <td><%=upcL.get(i) %></td>
 				<td><%=itemsL.get(i) %></td>
