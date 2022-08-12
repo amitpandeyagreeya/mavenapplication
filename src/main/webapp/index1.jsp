@@ -66,7 +66,7 @@ if(upc !=null) {
 			function editFunction(event){
 				
 				var index = event.target.parentNode.id;
-				alert(<%=upcL.get(index)%>); 
+				alert(<%=upcL.get(%>index<%)%>); 
 				alert(event.target.parentNode.id);
 			}
 		</script>
