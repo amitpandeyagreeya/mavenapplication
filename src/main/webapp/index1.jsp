@@ -1,17 +1,6 @@
 <%@ page import = " java.util.* " %>
 <html>
-	<head>
-	 <link rel="stylesheet" href = "bootstrap.min.css">
-		<script type="text/javascript">
-			function editFunction(event){
-				
-				var index = event.target.parentNode.id;
-				alert(<%=upcL.get(index)%>); 
-				alert(event.target.parentNode.id);
-			}
-		</script>
-	</head>
-<body class="bg-dark text-white">
+	
 	<%
 String upc = request.getParameter("upc");
 String itemName = request.getParameter("itemName");
@@ -71,7 +60,18 @@ if(upc !=null) {
 }
 
 %>
-
+<head>
+	 <link rel="stylesheet" href = "bootstrap.min.css">
+		<script type="text/javascript">
+			function editFunction(event){
+				
+				var index = event.target.parentNode.id;
+				alert(<%=upcL.get(index)%>); 
+				alert(event.target.parentNode.id);
+			}
+		</script>
+	</head>
+<body class="bg-dark text-white">
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
 	<form action="index1.jsp" id="form1" class="form-inline" method = "post">
