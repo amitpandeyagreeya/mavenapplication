@@ -57,6 +57,18 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 	expirationdateL.add(expirationDate);
 	itemsizeL.add(itemSize);
 	
+} else {
+	int rowNum = Integer.parseInt(request.getParameter("rownum"));
+	upcL.set(rowNum,upc);
+	itemsL.set(rowNum,itemName);
+	itemdescriptionL.set(rowNum,itemDescription);
+	itemPriceL.set(rowNum,itemPrice);
+	staringInventoryL.set(rowNum,staringInventory);
+	unitcostL.set(rowNum,unitCost);
+	categoryL.set(rowNum,category);
+	brandL.set(rowNum,brand);
+	expirationdateL.set(rowNum,expirationDate);
+	itemsizeL.set(rowNum,itemSize);
 }
 
 %>
@@ -73,10 +85,9 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 			function checkButtonType(event) {
 				var button = document.getElementById("buttonClick");
 				button.value=event.target.id;
-				alert("here in click");
 			}
 			function myFunction() {
-				alert('<%=request.getParameter("requestType")%>');
+				alert('<%=request.getParameter("rownum")%>');
 				      
 				<% if(request.getParameter("rownum")!=null && request.getParameter("rownum").length() > 0){
 				%>
