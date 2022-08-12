@@ -45,7 +45,7 @@ List<String> upcL = request.getSession().getAttribute("upcL") != null ?  (ArrayL
 
 
 
-if(upc !=null) {
+if(upc !=null && request.getParameter("requestType")!=null && request.getParameter("requestType").equals("subBut")) {
 	upcL.add(upc);
 	itemsL.add(itemName);
 	itemdescriptionL.add(itemDescription);
@@ -76,7 +76,8 @@ if(upc !=null) {
 				alert("here in click");
 			}
 			function myFunction() {
-				alert(<%=request.getParameter("requestType")%>);
+				alert('<%=request.getParameter("requestType")%>');
+				      
 				<% if(request.getParameter("rownum")!=null && request.getParameter("rownum").length() > 0){
 				%>
 				document.getElementById("upc").value = '<%=upcL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
