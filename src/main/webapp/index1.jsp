@@ -74,6 +74,15 @@ if(upc !=null) {
 				<% if(request.getParameter("rownum")!=null && request.getParameter("rownum").length() > 0){
 				%>
 				document.getElementById("upc").value = '<%=upcL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("itemName").value = '<%=itemsL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("itemDescription").value = '<%=itemdescriptionL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("itemPrice").value = '<%=itemPriceL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("unitCost").value = '<%=unitcostL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("staringInventory").value = '<%=staringInventoryL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("category").value = '<%=categoryL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("brand").value = '<%=brandL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("expirationDate").value = '<%=expirationdateL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
+				document.getElementById("itemSize").value = '<%=itemsizeL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
 				<%}%>
 			}
 		</script>
