@@ -68,7 +68,8 @@ if(upc !=null) {
 				index = event.target.parentNode.id;
 			}
 			<%!
-			String rowNum = "<script>document.writeln(tempRegion)</script>";
+			String rowNumStr = "<script>document.writeln(index)</script>";
+			int rowNum = Integer.parseInt(rowNumStr);
 			%>
 			if(index > -1){
 				var upc = document.getElementById("upc");
