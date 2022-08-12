@@ -68,6 +68,7 @@ if(upc !=null) {
 				var index = event.target.parentNode.id;
 				var upc = document.getElementById("rownum");
 				upc.value = index;
+				document.getElementById('form1').submit();
 			}
 			
 		</script>
