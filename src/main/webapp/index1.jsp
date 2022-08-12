@@ -139,7 +139,7 @@ if(upc !=null) {
 		<input type="hidden" id="rownum" name="rownum"/>
 		
 		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "submit">Submit</button>
-		<button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "udpate" style="display:none;">Update</button>
+		<button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;display:none;" id = "udpate" >Update</button>
 	</form>
 
 <table class="table table-striped"  style="margin-top:50px;">
