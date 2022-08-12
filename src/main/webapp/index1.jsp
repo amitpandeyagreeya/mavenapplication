@@ -71,9 +71,12 @@ if(upc !=null) {
 				document.getElementById('form1').submit();
 			}
 			function checkButtonType(event) {
+				var button = document.getElementById("buttonClick");
+				button.value=event.target.id;
 				alert("here in click");
 			}
 			function myFunction() {
+				alert(<%=request.getParameter("requestType")%>);
 				<% if(request.getParameter("rownum")!=null && request.getParameter("rownum").length() > 0){
 				%>
 				document.getElementById("upc").value = '<%=upcL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
@@ -91,6 +94,7 @@ if(upc !=null) {
   					x.setAttribute("type", "submit");
   					x.setAttribute("style","margin-left: 486px;margin-top: 30px;");
   					x.setAttribute("id","update");
+					x.setAttribute("onclick","checkButtonType(event)");
 					x.setAttribute("value","Update");
 					x.innerText = "Update";
   					document.getElementById('form1').appendChild(x);
