@@ -73,7 +73,8 @@ if(upc !=null) {
 			%>
 			if(index > -1){
 				var upc = document.getElementById("upc");
-				upc.value = <%=upcL.get(rowNum)%>;
+				upc.value = <%=upcL.get(0)%>;
+				alert(<%=rowNum%>
 			}
 			
 		</script>
