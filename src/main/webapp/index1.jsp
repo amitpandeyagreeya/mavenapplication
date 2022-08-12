@@ -63,23 +63,17 @@ if(upc !=null) {
 <head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
 		<script type="text/javascript">
-			var index = -1;
-			function editFunction(event){
-				index = event.target.parentNode.id;
-			}
-			<%!
-			String rowNumStr = "<script>document.writeln(index)</script>";
 			
-			%>
-			if(index > -1){
-				var upc = document.getElementById("upc");
-				upc.value = <%=upcL.get(0)%>;
-				alert(<%=rowNumStr%>)
+			function editFunction(event){
+				var index = event.target.parentNode.id;
+				var upc = document.getElementById("rownum");
+				upc.value = index;
 			}
 			
 		</script>
 	</head>
 <body class="bg-dark text-white">
+	<p>index is <%=request.getParameter("rownum");%>
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
 	<form action="index1.jsp" id="form1" class="form-inline" method = "post">
@@ -125,6 +119,7 @@ if(upc !=null) {
 		</div>	
 		<div class="form-group">
 		</div>
+		<input type="hidden" id="rownum" name="rownum"/>
 		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;">Submit</button>
 	</form>
 
