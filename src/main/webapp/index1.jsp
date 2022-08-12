@@ -63,12 +63,14 @@ if(upc !=null) {
 <head>
 	 <link rel="stylesheet" href = "bootstrap.min.css">
 		<script type="text/javascript">
+			var index;
 			function editFunction(event){
-				
-				var index = event.target.parentNode.id;
-				alert(<%=upcL.get(%>index<%)%>); 
+				index = event.target.parentNode.id;
 				alert(event.target.parentNode.id);
 			}
+			<%!
+			String rowNum = "<script>document.writeln(tempRegion)</script>";
+			%>			
 		</script>
 	</head>
 <body class="bg-dark text-white">
