@@ -58,7 +58,7 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 	itemsizeL.add(itemSize);
 	
 } else {
-	if(request.getParameter("rownum")!=null) {
+	if(request.getParameter("rownum")!=null && request.getParameter("requestType").equals("update")) {
 	int rowNum = Integer.parseInt(request.getParameter("rownum"));
 	
 	upcL.set(rowNum,upc);
