@@ -83,9 +83,7 @@ if(upc !=null) {
 				document.getElementById("brand").value = '<%=brandL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
 				document.getElementById("expirationDate").value = '<%=expirationdateL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
 				document.getElementById("itemSize").value = '<%=itemsizeL.get(Integer.parseInt(request.getParameter("rownum")))%>' ;
-				document.getElementById("udpate").style.display = 'block';
-				document.getElementById("submit").style.display = 'none';
-				document.getElementById("submit").remove();
+				document.getElementById("subBut").remove();
 				var x = document.createElement("button");
   					x.setAttribute("type", "submit");
   					x.setAttribute("style","margin-left: 486px;margin-top: 30px;");
@@ -145,7 +143,7 @@ if(upc !=null) {
 		</div>
 		<input type="hidden" id="rownum" name="rownum"/>
 		
-		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "submit">Submit</button>
+		  <button class="btn btn-default btn btn-info active" type="submit"  style="margin-left: 486px;margin-top: 30px;" id = "subBut">Submit</button>
 		
 	</form>
 
