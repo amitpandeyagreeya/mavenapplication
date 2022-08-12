@@ -134,7 +134,7 @@ if(upc !=null) {
 		</tr>	
 	<% for(int i=0; i<upcL.size(); i++) {
 			
-		%><tr id=<%=i%> onclick="editFunction()">
+		%><tr id=<%=i%> onclick="editFunction(event)">
 				
 				 <td><%=upcL.get(i) %></td>
 				<td><%=itemsL.get(i) %></td>
