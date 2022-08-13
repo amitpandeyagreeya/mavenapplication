@@ -89,7 +89,7 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 				var button = document.getElementById("buttonClick");
 				button.value=event.target.id;
 				var upc = document.getElementById("rownum");
-				<%if(request.getParameter("rownum")!=null)) {%>
+				<%if(request.getParameter("rownum")!=null) {%>
 				upc.value=<%=request.getParameter("rownum")%>;
 				<%}%>
 			}
