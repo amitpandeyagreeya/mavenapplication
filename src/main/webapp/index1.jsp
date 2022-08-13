@@ -58,7 +58,7 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 	itemsizeL.add(itemSize);
 	
 } else {
-	if(request.getParameter("rownum")!=null && request.getParameter("requestType").equals("update")) {
+	if(request.getParameter("rownum")>0 && request.getParameter("requestType").equals("update")) {
 	int rowNum = Integer.parseInt(request.getParameter("rownum"));
 	
 	upcL.set(rowNum,upc);
@@ -89,9 +89,8 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 				var button = document.getElementById("buttonClick");
 				button.value=event.target.id;
 				var upc = document.getElementById("rownum");
-				<%if(request.getParameter("rownum")!=null) {%>
 				upc.value=<%=request.getParameter("rownum")%>;
-				<%}%>
+				
 			}
 			function myFunction() {
 				alert('<%=request.getParameter("rownum")%>');
@@ -169,7 +168,7 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 		</div>	
 		<div class="form-group">
 		</div>
-		<input type="hidden" id="rownum" name="rownum"/>
+		<input type="hidden" id="rownum" name="rownum" value="-1"/>
 		<input type="hidden" id="buttonClick" name="requestType"/>
 		   		
 		  <button class="btn btn-default btn btn-info active" type="submit"   onclick="checkButtonType(event)" onClickstyle="margin-left: 486px;margin-top: 30px;" id = "subBut">Submit</button>
