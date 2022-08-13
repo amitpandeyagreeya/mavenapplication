@@ -89,7 +89,9 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 				var button = document.getElementById("buttonClick");
 				button.value=event.target.id;
 				var upc = document.getElementById("rownum");
-				upc.value=<%=request.getParameter("rownum")%>;
+				if(event.target.id!=='subBut') {
+					upc.value=<%=request.getParameter("rownum")%>;
+				}
 				
 			}
 			function myFunction() {
