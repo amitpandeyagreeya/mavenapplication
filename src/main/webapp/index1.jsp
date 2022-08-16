@@ -95,7 +95,6 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 				
 			}
 			function myFunction() {
-				alert('<%=request.getParameter("rownum")%>');
 				      
 				<% if(request.getParameter("rownum")!=null && request.getParameter("rownum").length() > 0){
 				%>
@@ -124,7 +123,7 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 		</script>
 	</head>
 <body class="bg-dark text-white"  onload="myFunction()">
-	<p>index is <%=request.getParameter("rownum")%>
+	
 <div class="container">
 	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
 	<form action="index1.jsp" id="form1" class="form-inline" method = "post">
