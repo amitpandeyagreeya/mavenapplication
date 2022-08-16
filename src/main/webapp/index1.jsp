@@ -125,7 +125,7 @@ if(upc !=null && request.getParameter("requestType")!=null && request.getParamet
 <body class="bg-dark text-white"  onload="myFunction()">
 	
 <div class="container">
-	<h2  style="margin-bottom:50px;"> Update processed data 1 </h2>
+	<h2  style="margin-bottom:50px;"> Item Maintaince </h2>
 	<form action="index1.jsp" id="form1" class="form-inline" method = "post">
 		<div id="form" class="form-group" style="margin-left: 50px;margin-bottom: 20px;">
 		    <label for="upc">UPC :</label>
