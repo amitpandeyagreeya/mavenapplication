@@ -1,6 +1,14 @@
 <%@ page import=" java.util.* "%>
 <html>
+<script type="text/javascript">
+$(document)
+.ready(
+		function() {
+			document.getElementById("rownum").value=-1;
+			
+		});
 
+</script>
 <%
 	String upc = request.getParameter("upc");
 	String itemName = request.getParameter("itemName");
@@ -62,7 +70,9 @@
 	session.setAttribute("brandL", brandL);
 	session.setAttribute("expirationdateL", expirationdateL);
 	session.setAttribute("itemsizeL", itemsizeL);
-	if (request.getParameter("buttonClick") == null && upc!=null) {
+	System.out.print(upc);
+	System.out.print("buttonClick");
+	if (request.getParameter("rownum") != null &&(Integer.parseInt(request.getParameter("rownum"))) < 0 && upc!=null) {
 		upcL.add(upc);
 		itemsL.add(itemName);
 		itemdescriptionL.add(itemDescription);
@@ -94,6 +104,7 @@
 %>
 <head>
 <link rel="stylesheet" href="bootstrap.min.css">
+
 <script type="text/javascript">
 			
 			function editFunction(index,upc,item,itemD,itemP,uCost,sInv,cat,brand,eDate,iSize){
@@ -109,10 +120,8 @@
 		       document.getElementById("brand").value=brand;
 		       document.getElementById("expirationDate").value=eDate;
 		       document.getElementById("itemSize").value=iSize;
-
 			}
 			function checkButtonType(event) {
-				var button = document.getElementById("buttonClick");
 				button.value=event.target.id;
 				var upc = document.getElementById("rownum");
 				if(event.target.id!=='subBut') {
