@@ -162,33 +162,41 @@ $(document)
 	<div class="container">
 		<h2 style="margin-bottom: 50px;">Item Maintaince</h2>
 		<form action="index1.jsp" id="form1" class="form-inline" method="post">
+			<table>
+			<tr>	
+			<td>	
 			<div id="form" class="form-group"
 				style="margin-left: 50px; margin-bottom: 20px;">
 				<label for="upc">UPC :</label> <input type="text" name="upc"
 					class="form-control" placeholder="upc" id="upc">
 			</div>
+			</td><td>	
 			<div class="form-group"
 				style="margin-left: 50px; margin-bottom: 20px">
 				<label for="itemName">Item Name:</label> <input type="text"
 					name="itemName" class="form-control" id="itemName"
 					placeholder="Item Name">
 			</div>
+			</td><td>	
 			<div class="form-group"
 				style="margin-left: 50px; margin-bottom: 20px">
 				<label for="itemDescription">Item Description:</label> <input
 					type="text" name="itemDescription" class="form-control"
 					id="itemDescription" placeholder="itemDescription">
 			</div>
+			</td></tr><tr><td>	
 			<div class="form-group" style="margin-left: 50px;">
 				<label for="itemPrice">Item Price Per Unit:</label> <input
 					type="text" name="itemPrice" class="form-control" id="itemPrice"
 					placeholder="Item Price" style="margin-left: 8px;">
 			</div>
+			</td><td>	
 			<div class="form-group" style="margin-left: 50px;">
 				<label for="unitCost">Unit Cost:</label> <input type="text"
 					name="unitCost" class="form-control" id="unitCost"
 					placeholder="Unit Cost" style="margin-left: 36px;">
 			</div>
+			</td><td>	
 			<div class="form-group" style="margin-left: 50px;">
 				<label for="staringInventory"
 					style="margin-left: -56px; text-align: center; overflow-wrap: break-word; width: 92px;">Starting
@@ -196,20 +204,24 @@ $(document)
 					class="form-control" id="staringInventory"
 					placeholder="Starting Inventory">
 			</div>
+			</td></tr><tr><td>	
 			<div class="form-group" style="margin-left: 50px;">
 				<label for="category">Category:</label> <input type="text"
 					name="category" class="form-control" id="category"
 					placeholder="category">
 			</div>
+			</td><td>	
 			<div class="form-group" style="margin-left: 50px;">
 				<label for="brand">Brand:</label> <input type="text" name="brand"
 					class="form-control" id="brand" placeholder="Brand">
 			</div>
+			</td><td>	
 			<div class="form-group" style="margin-left: 50px;">
 				<label for="expirationDate">Expiration Date:</label> <input
 					type="text" name="expirationDate" class="form-control"
 					id="expirationDate" placeholder="Expiration Date">
 			</div>
+			</td></tr><tr><td>	
 			<div class="form-group" style="margin-left: 50px;">
 				<label for="itemSize">Item Size:</label> <input type="text"
 					name="itemSize" class="form-control" id="itemSize"
@@ -218,10 +230,15 @@ $(document)
 			<div class="form-group"></div>
 			<input type="hidden" id="rownum" name="rownum" value="-1" /> 
 			<input type="hidden" id="buttonClick" name="buttonClick" />
-
+                         </td>
+				</tr>
+			<tr>
+			      <td>
 			<button class="btn btn-default btn btn-info active" type="submit"
 				onClickstyle="margin-left: 486px;margin-top: 30px;" id="subBut">Submit</button>
-
+			      </td>
+				</tr>      
+                     </table>
 		</form>
 
 		<table class="table table-striped" style="margin-top: 50px;">
