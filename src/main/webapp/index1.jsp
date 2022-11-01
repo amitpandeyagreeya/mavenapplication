@@ -160,7 +160,7 @@ $(document)
 <body class="bg-dark text-white">
 
 	<div class="container">
-		<h2 style="margin-bottom: 50px;">Item Maintaince</h2>
+		<h2 style="margin-bottom: 50px;">Item Maintenance</h2>
 		<form action="index1.jsp" id="form1" class="form-inline" method="post">
 			<table>
 			<tr>	
