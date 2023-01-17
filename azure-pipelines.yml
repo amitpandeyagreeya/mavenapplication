@@ -29,7 +29,7 @@ steps:
         WebAppName: 'beatblipwebapp'
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
 
-- script: curl -o beatblipconsole.zip https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoopConsole.exe
+- script: curl -o HuLoopConsole.zip https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoopConsole.exe
   displayName: 'Download Zip file'
 
 #Step2 Extracting Zip File
