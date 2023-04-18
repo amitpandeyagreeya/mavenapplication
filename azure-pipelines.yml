@@ -29,7 +29,7 @@ steps:
         WebAppName: 'beatblipwebapp'
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
 
-- script: curl -o HuLoopConsole.zip https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoopConsole.zip
+- script: curl -o HuLoopConsole.zip https://demo.huloop.ai:446/HuLoopSubscriptionUI/HuLoopConsole.zip
   displayName: 'Download Zip file'
 
 #Step2 Extracting Zip File
@@ -40,18 +40,18 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: curl -o test.txt https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoop.txt 
+- script: curl -o test.txt https://demo.huloop.ai:446/HuLoopSubscriptionUI/HuLoop.txt 
   displayName: 'Download text file'
 
 #Step4
-- script: curl -o chromedriver.exe https://demo.huloop.ai/HuLoopSubscriptionUI/chromedriver.exe 
+- script: curl -o chromedriver.exe https://demo.huloop.ai:446/HuLoopSubscriptionUI/chromedriver.exe 
   displayName: 'Download chrome exe'
 
 #Step5
 - script: C:\Users\VssAdministrator\huloop\huloop.exe -open "$(Agent.BuildDirectory)\s\test.txt"
    displayName:'Run HuLoop'
 
-- script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
+- script: curl -o test.bat https://demo.huloop.ai:446/HuLoopSubscriptionUI/test.bat 
   displayName: 'Download Batch Script'
 
 - task: BatchScript@1
