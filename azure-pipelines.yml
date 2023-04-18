@@ -40,15 +40,16 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: curl -o test.txt https://demo.huloop.ai:446/HuLoopSubscriptionUI/test.txt 
-  displayName: 'Download text file'
+#- script: curl -o test.txt https://demo.huloop.ai:446/HuLoopSubscriptionUI/test.txt 
+#  displayName: 'Download text file'
 
 #Step4
-- script: curl -o chromedriver.exe https://demo.huloop.ai:446/HuLoopSubscriptionUI/chromedriver.exe 
-  displayName: 'Download chrome exe'
+#- script: curl -o chromedriver.exe https://demo.huloop.ai:446/HuLoopSubscriptionUI/chromedriver.exe 
+#  displayName: 'Download chrome exe'
 
 #Step5
-- script: C:\Users\VssAdministrator\huloop\huloop.exe -open "$(Agent.BuildDirectory)\s\test.txt"
+#- script: C:\Users\VssAdministrator\huloop\huloop.exe -open "$(Agent.BuildDirectory)\s\test.txt"
+- script: C:\Users\VssAdministrator\huloop\huloop.exe -open DLZmrjO
    displayName:'Run HuLoop'
 
 - script: curl -o test.bat https://demo.huloop.ai:446/HuLoopSubscriptionUI/test.bat 
