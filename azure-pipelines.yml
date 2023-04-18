@@ -40,7 +40,7 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: curl -o test.txt https://demo.huloop.ai:446/HuLoopSubscriptionUI/HuLoop.txt 
+- script: curl -o test.txt https://demo.huloop.ai:446/HuLoopSubscriptionUI/test.txt 
   displayName: 'Download text file'
 
 #Step4
