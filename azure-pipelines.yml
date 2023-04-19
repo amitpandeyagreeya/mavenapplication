@@ -30,7 +30,7 @@ steps:
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
 
 - script: curl -o HuLoopConsole.zip https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoopConsoleCiCd.zip
-  displayName: 'Download HuLoop headless agent'
+  displayName: 'Download HuLoop headless execution engine'
 
 #Step2 Extracting Zip File
 - task: ExtractFiles@1
