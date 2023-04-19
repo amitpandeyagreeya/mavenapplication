@@ -49,7 +49,7 @@ steps:
 
 #Step5
 - script: C:\Users\VssAdministrator\huloop\huloop.exe -open "$(Agent.BuildDirectory)\s\test.txt"
-  displayName:'Run HuLoop'
+  displayName: 'Run HuLoop'
 
 - script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
   displayName: 'Download Batch Script'
