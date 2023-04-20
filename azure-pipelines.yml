@@ -48,7 +48,7 @@ steps:
 #  displayName: 'Download chrome exe'
 
 #Step5
-- script: C:\Users\VssAdministrator\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoop.txt"
+- script: C:\Users\VssAdministrator\HuLoopConsoleCiCd\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoopConsoleCiCd\HuLoop.txt"
   displayName: 'Run HuLoop'
 
 #- script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
@@ -56,4 +56,4 @@ steps:
 
 - task: BatchScript@1
   inputs:
-    filename: 'C:\Users\VssAdministrator\test.bat'
+    filename: 'C:\Users\VssAdministrator\HuLoopConsoleCiCd\test.bat'
