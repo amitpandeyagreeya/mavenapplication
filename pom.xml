@@ -79,13 +79,15 @@
             </resources>
           </deployment>
         </configuration>
-      </plugin>
+      </plugin>       	  
+</plugins>
+	      <pluginManagement>
       <plugins>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>2.6</version>
         </plugin>           
-      </plugins>	  
-</plugins>
+      </plugins>
+    </pluginManagement>  
 </build>
 </project>
