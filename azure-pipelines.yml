@@ -40,20 +40,20 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: curl -o test.txt https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoop.txt 
-  displayName: 'Download configuration file'
+#- script: curl -o test.txt https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoop.txt 
+#  displayName: 'Download configuration file'
 
 #Step4
-- script: curl -o chromedriver.exe https://demo.huloop.ai/HuLoopSubscriptionUI/chromedriver.exe 
-  displayName: 'Download chrome exe'
+#- script: curl -o chromedriver.exe https://demo.huloop.ai/HuLoopSubscriptionUI/chromedriver.exe 
+#  displayName: 'Download chrome exe'
 
 #Step5
-- script: C:\Users\VssAdministrator\huloop\huloop.exe -open "$(Agent.BuildDirectory)\s\test.txt"
+- script: C:\Users\VssAdministrator\HuLoopConsoleCiCd\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoopConsoleCiCd\HuLoop.txt"
   displayName: 'Run HuLoop'
 
-- script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
-  displayName: 'Download Batch Script'
+#- script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
+#  displayName: 'Download Batch Script'
 
 - task: BatchScript@1
   inputs:
-    filename: '$(Agent.BuildDirectory)\s\test.bat'
+    filename: 'C:\Users\VssAdministrator\HuLoopConsoleCiCd\test.bat'
